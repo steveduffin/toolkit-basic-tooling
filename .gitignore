@@ -1,0 +1,13 @@
+*.iml
+node_modules/
+build/
+.idea/
+*.log
+.DS_Store
+coverage
+node_modules
+react-bundle
+.vscode
+dist
+npm-debug.log
+.nyc_output

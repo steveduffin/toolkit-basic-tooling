@@ -1,0 +1,22 @@
+{
+  "name": "name",
+  "version": "0.0.1",
+  "description": "description",
+  "scripts": {
+    "build:css": "node-sass --include-path node_modules --output-style nested src/scss -o dist/css",
+    "watch:css": "nodemon -e scss --exec npm run build:css",
+    "server" : "browser-sync start --server 'dist' --files dist/*",
+    "preview": "concurrently \"npm run server\" \"npm run watch:css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sky-toolkit": "^1.20.0"
+  },
+  "devDependencies": {
+    "node-sass": "^3.11.2",
+    "nodemon": "^1.11.0",
+    "browser-sync": "^2.18.12",
+    "concurrently": "^3.4.0"
+  }
+}
