@@ -8,6 +8,6 @@ coverage
 node_modules
 react-bundle
 .vscode
-dist
+dist/css
 npm-debug.log
 .nyc_output
